@@ -3,4 +3,6 @@ members = [
     "rust/libnewsboat",
     "rust/libnewsboat-ffi",
     "rust/strprintf",
+
+    "rust/gettext-sys-with-system-gettext",
 ]

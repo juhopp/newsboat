@@ -35,11 +35,11 @@ version = "2.33"
 #   I want as little dependencies as practically possible.
 default-features = false
 
-[dependencies.gettext-sys]
-version = "0.19.8"
-# Don't let the crate build its own copy of gettext; force it to use the one
-# built into glibc.
-features = [ "gettext-system" ]
+[target.'cfg(target_os = "macos")'.dependencies]
+gettext-sys = "0.19.8"
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]
+gettext-sys-with-system-gettext = { path="../gettext-sys-with-system-gettext" }
 
 [dev-dependencies]
 tempfile = "3"

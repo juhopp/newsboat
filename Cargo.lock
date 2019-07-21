@@ -194,6 +194,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "gettext-sys-with-system-gettext"
+version = "0.19.8"
+dependencies = [
+ "gettext-sys 0.19.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "idna"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -238,6 +245,7 @@ dependencies = [
  "dirs 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "gettext-rs 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "gettext-sys 0.19.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gettext-sys-with-system-gettext 0.19.8",
  "libc 0.2.48 (registry+https://github.com/rust-lang/crates.io-index)",
  "libz-sys 1.0.17 (registry+https://github.com/rust-lang/crates.io-index)",
  "nom 4.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
